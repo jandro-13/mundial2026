@@ -1,214 +1,122 @@
-export default function LandingPage() {
-  return (
-    <div className="min-h-screen bg-gray-950 text-white font-sans">
-      {/* HERO */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/20 via-purple-600/10 to-cyan-500/20 blur-3xl" />
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Landing</title>
 
-        <div className="relative max-w-7xl mx-auto px-6 py-24 lg:py-36">
-          <div className="grid lg:grid-cols-2 gap-14 items-center">
-            <div>
-              <span className="inline-block px-4 py-2 rounded-full bg-white/10 border border-white/10 text-sm mb-6">
-                Web lista para GitHub Pages
-              </span>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
 
-              <h1 className="text-5xl lg:text-7xl font-black leading-tight">
-                Crea una presencia
-                <span className="block text-indigo-400">moderna y profesional</span>
-              </h1>
+    body{
+      font-family:Arial,sans-serif;
+      background:#0f172a;
+      color:white;
+      line-height:1.6;
+    }
 
-              <p className="mt-8 text-lg text-gray-300 leading-relaxed max-w-xl">
-                Una landing page elegante, rápida y responsive lista para publicar en GitHub Pages,
-                Vercel o Netlify.
-              </p>
+    header{
+      padding:120px 20px;
+      text-align:center;
+      background:linear-gradient(135deg,#4f46e5,#7c3aed);
+    }
 
-              <div className="mt-10 flex flex-wrap gap-4">
-                <button className="px-7 py-4 rounded-2xl bg-indigo-500 hover:bg-indigo-400 transition text-lg font-semibold shadow-2xl">
-                  Empezar
-                </button>
+    h1{
+      font-size:4rem;
+      margin-bottom:20px;
+    }
 
-                <button className="px-7 py-4 rounded-2xl border border-white/20 hover:bg-white/10 transition text-lg font-semibold">
-                  Ver demo
-                </button>
-              </div>
+    p{
+      max-width:700px;
+      margin:auto;
+      font-size:1.2rem;
+    }
 
-              <div className="mt-10 flex items-center gap-8 text-sm text-gray-400">
-                <div>
-                  <div className="text-2xl font-bold text-white">100%</div>
-                  Responsive
-                </div>
+    .btn{
+      display:inline-block;
+      margin-top:30px;
+      padding:15px 35px;
+      background:white;
+      color:#111827;
+      border-radius:12px;
+      text-decoration:none;
+      font-weight:bold;
+    }
 
-                <div>
-                  <div className="text-2xl font-bold text-white">⚡</div>
-                  Rápida
-                </div>
+    section{
+      padding:80px 20px;
+      max-width:1200px;
+      margin:auto;
+    }
 
-                <div>
-                  <div className="text-2xl font-bold text-white">SEO</div>
-                  Optimizada
-                </div>
-              </div>
-            </div>
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+      margin-top:40px;
+    }
 
-            <div className="relative">
-              <div className="absolute -inset-4 bg-indigo-500/20 blur-3xl rounded-full" />
+    .card{
+      background:#1e293b;
+      padding:30px;
+      border-radius:20px;
+    }
 
-              <div className="relative bg-white/5 border border-white/10 rounded-[32px] p-6 backdrop-blur-xl shadow-2xl">
-                <div className="flex gap-2 mb-6">
-                  <div className="w-3 h-3 rounded-full bg-red-400" />
-                  <div className="w-3 h-3 rounded-full bg-yellow-400" />
-                  <div className="w-3 h-3 rounded-full bg-green-400" />
-                </div>
+    .card h3{
+      margin-bottom:15px;
+    }
 
-                <div className="rounded-3xl overflow-hidden border border-white/10 bg-gray-900">
-                  <img
-                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1400&auto=format&fit=crop"
-                    alt="Coding"
-                    className="w-full h-[420px] object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    footer{
+      text-align:center;
+      padding:40px;
+      border-top:1px solid rgba(255,255,255,.1);
+      color:#94a3b8;
+    }
+  </style>
+</head>
+<body>
 
-      {/* FEATURES */}
-      <section className="max-w-7xl mx-auto px-6 py-24">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl lg:text-5xl font-black">
-            Todo lo que necesitas
-          </h2>
-          <p className="mt-6 text-gray-400 text-lg">
-            Diseño moderno, responsive y preparado para destacar online.
-          </p>
-        </div>
+<header>
+  <h1>Mi Web Profesional</h1>
+  <p>
+    Landing page moderna creada directamente desde GitHub Pages.
+  </p>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {[
-            {
-              title: 'Responsive',
-              text: 'Perfecta en móviles, tablets y escritorio.',
-              icon: '📱',
-            },
-            {
-              title: 'Optimizada',
-              text: 'Carga rápida y preparada para SEO.',
-              icon: '⚡',
-            },
-            {
-              title: 'Editable',
-              text: 'Modifica textos y colores fácilmente.',
-              icon: '🎨',
-            },
-            {
-              title: 'GitHub Ready',
-              text: 'Lista para subir a GitHub Pages.',
-              icon: '🚀',
-            },
-            {
-              title: 'Diseño moderno',
-              text: 'UI limpia con efectos visuales elegantes.',
-              icon: '✨',
-            },
-            {
-              title: 'Gratis',
-              text: 'Puedes alojarla sin pagar hosting.',
-              icon: '💸',
-            },
-          ].map((feature) => (
-            <div
-              key={feature.title}
-              className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition"
-            >
-              <div className="text-5xl mb-5">{feature.icon}</div>
-              <h3 className="text-2xl font-bold mb-3">{feature.title}</h3>
-              <p className="text-gray-400 leading-relaxed">{feature.text}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+  <a class="btn" href="#">
+    Empezar
+  </a>
+</header>
 
-      {/* ABOUT */}
-      <section className="bg-white/5 border-y border-white/10">
-        <div className="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <img
-              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1400&auto=format&fit=crop"
-              alt="Team"
-              className="rounded-[32px] shadow-2xl border border-white/10"
-            />
-          </div>
+<section>
+  <h2>Características</h2>
 
-          <div>
-            <h2 className="text-4xl lg:text-5xl font-black leading-tight">
-              Diseñada para impresionar
-            </h2>
+  <div class="cards">
 
-            <p className="mt-8 text-lg text-gray-300 leading-relaxed">
-              Esta plantilla utiliza componentes modernos, tipografía limpia y una estructura
-              optimizada para convertir visitantes en clientes.
-            </p>
-
-            <div className="mt-10 space-y-5">
-              {[
-                'Diseño profesional y elegante',
-                'Código limpio y reutilizable',
-                'Ideal para portfolios y negocios',
-                'Compatible con GitHub Pages y Vercel',
-              ].map((item) => (
-                <div
-                  key={item}
-                  className="flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl p-4"
-                >
-                  <div className="w-10 h-10 rounded-xl bg-indigo-500 flex items-center justify-center font-bold">
-                    ✓
-                  </div>
-                  <span className="text-lg">{item}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="max-w-5xl mx-auto px-6 py-28 text-center">
-        <div className="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-[40px] p-14 shadow-2xl">
-          <h2 className="text-4xl lg:text-6xl font-black leading-tight">
-            Publica tu web hoy mismo
-          </h2>
-
-          <p className="mt-6 text-lg text-indigo-100 max-w-2xl mx-auto leading-relaxed">
-            Súbela a GitHub Pages en minutos y consigue una web moderna sin pagar hosting.
-          </p>
-
-          <button className="mt-10 px-8 py-4 bg-white text-gray-900 rounded-2xl font-bold text-lg hover:scale-105 transition">
-            Comenzar ahora
-          </button>
-        </div>
-      </section>
-
-      {/* FOOTER */}
-      <footer className="border-t border-white/10 py-10 px-6">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-gray-400">
-          <div>
-            © 2026 Mi Landing. Todos los derechos reservados.
-          </div>
-
-          <div className="flex gap-6">
-            <a href="#" className="hover:text-white transition">
-              Instagram
-            </a>
-            <a href="#" className="hover:text-white transition">
-              GitHub
-            </a>
-            <a href="#" className="hover:text-white transition">
-              LinkedIn
-            </a>
-          </div>
-        </div>
-      </footer>
+    <div class="card">
+      <h3>⚡ Rápida</h3>
+      <p>Carga instantánea y optimizada.</p>
     </div>
-  )
-}
+
+    <div class="card">
+      <h3>📱 Responsive</h3>
+      <p>Perfecta para móviles y escritorio.</p>
+    </div>
+
+    <div class="card">
+      <h3>🚀 GitHub Pages</h3>
+      <p>Hosting gratuito y fácil de usar.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 Mi Landing
+</footer>
+
+</body>
+</html>
