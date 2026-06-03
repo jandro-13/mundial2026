@@ -1,3 +1,16 @@
+:root {
+  --bg: #0B0F19;
+  --card: #111827;
+  --text: #F8FAFC;
+  --muted: #94A3B8;
+
+  --red: #E11D48;
+  --blue: #2563EB;
+  --green: #22C55E;
+
+  --border: #1F2937;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -5,7 +18,9 @@ body {
   color: var(--text);
 }
 
-/* HERO */
+/* =======================
+   HERO
+======================= */
 .hero {
   text-align: center;
   padding: 100px 20px;
@@ -17,24 +32,22 @@ body {
 }
 
 .subtitle {
-  color: #cbd5e1;
+  color: var(--muted);
   font-size: 18px;
   max-width: 600px;
   margin: 0 auto 30px;
 }
 
-/* BOTONES */
-.buttons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
+/* =======================
+   BOTONES
+======================= */
 .btn {
+  display: inline-block;
   padding: 12px 20px;
   text-decoration: none;
   border-radius: 10px;
   font-weight: bold;
+  transition: 0.2s;
 }
 
 .primary {
@@ -51,7 +64,13 @@ body {
   color: var(--text);
 }
 
-/* SECCIONES */
+.secondary:hover {
+  border-color: white;
+}
+
+/* =======================
+   SECCIONES
+======================= */
 .section {
   padding: 60px 20px;
   max-width: 900px;
@@ -63,14 +82,15 @@ body {
   margin-bottom: 20px;
 }
 
-/* GRID */
+/* =======================
+   GRID CARDS
+======================= */
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
-/* CARDS */
 .card {
   background: var(--card);
   padding: 20px;
@@ -84,15 +104,19 @@ body {
   border-color: var(--blue);
 }
 
-/* FOOTER */
+/* =======================
+   FOOTER
+======================= */
 .footer {
   text-align: center;
   padding: 40px;
-  border-top: 1px solid #222;
-  color: #94a3b8;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
 }
 
-/* RESPONSIVE */
+/* =======================
+   RESPONSIVE
+======================= */
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 32px;
@@ -100,9 +124,5 @@ body {
 
   .grid {
     grid-template-columns: 1fr;
-  }
-
-  .buttons {
-    flex-direction: column;
   }
 }
