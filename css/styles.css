@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #0B0F19;
-  color: white;
+  background-color: var(--bg);
+  color: var(--text);
 }
 
 /* HERO */
@@ -38,13 +38,17 @@ body {
 }
 
 .primary {
-  background: white;
-  color: black;
+  background: var(--red);
+  color: white;
+}
+
+.primary:hover {
+  background: #be123c;
 }
 
 .secondary {
-  border: 1px solid #555;
-  color: white;
+  border: 1px solid var(--border);
+  color: var(--text);
 }
 
 /* SECCIONES */
@@ -68,9 +72,16 @@ body {
 
 /* CARDS */
 .card {
-  background: #111827;
+  background: var(--card);
   padding: 20px;
   border-radius: 12px;
+  border: 1px solid var(--border);
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: var(--blue);
 }
 
 /* FOOTER */
