@@ -230,10 +230,114 @@ body.selection-page {
 /* =======================
   COLOMBIA
 ======================= */
+/* =======================
+   COLOMBIA
+======================= */
+
 .colombia {
   --team-primary: #f4d03f;
   --team-secondary: #2e86de;
   --team-accent: #e74c3c;
+}
+
+.colombia .hero {
+  background: linear-gradient(
+    135deg,
+    var(--team-primary),
+    var(--team-secondary)
+  );
+}
+
+.colombia h2 {
+  color: var(--team-secondary);
+}
+
+/* =======================
+   FRANCIA
+======================= */
+
+.francia {
+  --team-primary: #0055a4;
+  --team-secondary: #ffffff;
+  --team-accent: #ef4135;
+}
+
+.francia .hero {
+  background: linear-gradient(
+    135deg,
+    #0055a4,
+    #ef4135
+  );
+}
+
+.francia h2 {
+  color: #0055a4;
+}
+
+/* =======================
+   PORTUGAL
+======================= */
+
+.portugal {
+  --team-primary: #046a38;   /* verde */
+  --team-secondary: #da291c; /* rojo */
+  --team-accent: #ffcc29;    /* dorado */
+}
+
+.portugal .hero {
+  background: linear-gradient(
+    135deg,
+    var(--team-primary),
+    var(--team-secondary)
+  );
+
+  color: white;
+}
+
+.portugal h2 {
+  color: var(--team-primary);
+}
+
+.portugal .card {
+  border-top: 4px solid var(--team-accent);
+}
+
+.portugal .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.12);
+}
+
+/* =======================
+   URUGUAY
+======================= */
+
+.uruguay {
+  --team-primary: #6ec6ff;   /* celeste */
+  --team-secondary: #0057b8; /* azul */
+  --team-accent: #ffd54f;    /* sol de mayo */
+}
+
+.uruguay .hero {
+  background: linear-gradient(
+    135deg,
+    var(--team-primary),
+    var(--team-secondary)
+  );
+
+  color: white;
+}
+
+.uruguay h2 {
+  color: var(--team-secondary);
+}
+
+.uruguay .card {
+  border-top: 4px solid var(--team-accent);
+}
+
+.uruguay .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.12);
 }
 
 .navbar {
