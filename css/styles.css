@@ -341,6 +341,80 @@ body.selection-page {
   box-shadow: 0 8px 20px rgba(0,0,0,.12);
 }
 
+/* =======================
+   BRASIL
+======================= */
+
+.brasil {
+  --team-primary: #009c3b;   /* verde Brasil */
+  --team-secondary: #ffdf00; /* amarillo */
+  --team-accent: #002776;    /* azul */
+}
+
+.brasil .hero {
+  background: linear-gradient(
+    135deg,
+    var(--team-primary),
+    var(--team-secondary)
+  );
+
+  color: #0b1b3a;
+}
+
+.brasil h2 {
+  color: var(--team-primary);
+}
+
+.brasil .card {
+  border-top: 4px solid var(--team-secondary);
+}
+
+.brasil .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,.12);
+}
+
+.brasil .section strong {
+  color: var(--team-accent);
+}
+
+/* =======================
+   MARRUECOS
+======================= */
+
+.marruecos {
+  --team-primary: #c1272d;   /* rojo bandera */
+  --team-secondary: #006233; /* verde */
+  --team-accent: #ffd700;    /* dorado estrella */
+}
+
+.marruecos .hero {
+  background: linear-gradient(
+    135deg,
+    var(--team-primary),
+    var(--team-secondary)
+  );
+
+  color: white;
+}
+
+.marruecos h2 {
+  color: var(--team-primary);
+}
+
+.marruecos .card {
+  border-top: 4px solid var(--team-secondary);
+}
+
+.marruecos .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,.12);
+}
+
+.marruecos .section strong {
+  color: var(--team-secondary);
+}
+
 .navbar {
   position: sticky;
   top: 0;
@@ -383,4 +457,22 @@ body.selection-page {
 
 .nav-link:hover {
   color: white;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+
+    overflow: hidden;
+    border-radius: 16px;
+
+    box-shadow: 0 8px 24px rgba(0,0,0,.15);
+}
+
+.video-container iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
 }
